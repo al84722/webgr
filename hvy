@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webist - Web Development with AI</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav li {
+            padding: 10px;
+        }
+        .nav li a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav li a:hover {
+            color: #ff9900;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            color: #666;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+        }
+        .sidebar {
+            background-color: white;
+            padding: 20px;
+        }
+        .sidebar h3 {
+            color: #333;
+        }
+        .sidebar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .sidebar li a {
+            color: #666;
+            text-decoration: none;
+        }
+        .sidebar li a:hover {
+            color: #ff9900;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://th.bing.com/th/id/R.f25b0e05c96be9f9bf81ab97a5448bc1?rik=pEprbyZToBBUwA&pid=ImgRaw&r=0" alt="Webist logo" class="logo">
+            <h1>Webist - Web Development with AI</h1>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="content">
+                <h2>Welcome to Webist</h2>
+                <p>We are a web development company that specializes in creating websites with artificial intelligence (AI). We use the latest technologies and tools to make your website smart, interactive and user-friendly.</p>
+                <p>AI is the future of web development. It can help you optimize your website performance, personalize your content, automate your tasks, and enhance your user experience. AI can also help you generate new ideas, insights and solutions for your business challenges.</p>
+                <p>At Webist, we have a team of experts who can design and develop your website with AI. We can help you integrate AI features such as chatbots, voice assistants, image recognition, natural language processing, machine learning, and more. We can also help you test and improve your website with AI analytics and feedback.</p>
+                <img src="https://blog.internet-formation.fr/wp-content/uploads/2020/04/Bing-search-engine.jpg" alt="AI web development image">
+                <h2>Why choose us?</h2>
+                <p>We are passionate about web development and AI. We have years of experience and knowledge in both fields. We are always up to date with the latest trends and innovations. We are creative and flexible in our approach. We are committed to delivering high-quality work and customer satisfaction.</p>
+                <p>We are not just a web development company. We are your partner in web development with AI. We will work with you to understand your needs, goals and vision. We will create a website that reflects your brand, values and personality. We will support you throughout the process and beyond.</p>
+                <p>We are Webist. We are web development with AI.</p>
+            </div>
+            <div class="sidebar">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">AI Integration</a></li>
+                    <li><a href="#">AI Testing</a></li>
+                    <li><a href="#">AI Optimization</a></li>
+                </ul>
+                <h3>Our Portfolio</h3>
+                <ul>
+                    <li><a href="#">Website for a travel agency with a chatbot</a></li>
+                    <li><a href="#">Website for a restaurant with a voice assistant</a></li>
+                    <li><a href="#">Website for a fashion store with image recognition</a></li>
+                    <li><a href="#">Website for a news portal with natural language processing</a></li>
+                    <li><a href="#">Website for a gaming platform with machine learning</a></li>
+                </ul>
+                <h3>Our Testimonials</h3>
+                <div id="testimonials">
+                    <div class="testimonial">
+                        <p>"Webist created a stunning website for our travel agency. They integrated a chatbot that can answer our customers' queries and book their trips. Our website traffic and sales have increased significantly thanks to Webist."</p>
+                        <p>- John Smith, TravelCo</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Webist did an amazing job on our restaurant website. They added a voice assistant that can take orders and reservations from our customers. Our website is more interactive and user-friendly thanks to Webist."</p>
+                        <p>- Jane Doe, Foodie</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Webist designed and developed a fantastic website for our fashion store. They used image recognition to help our customers find the best outfits and accessories. Our website is more personalized and engaging thanks to Webist."</p>
+                        <p>- Mark Lee, StyleMe</p>
+                    </div>
+                </div>
+                <script>
+                    $(function() {
+                        $("#testimonials").accordion({
+                            heightStyle: "content",
+                            collapsible: true
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2023 Webist. All rights reserved.</p>
+        </div>
+    </div>    
+</body>
+</html>
